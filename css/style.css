@@ -69,7 +69,7 @@ nav img {
     padding-left: 10%;
     padding-right: 5%;
     display: flex;
-    position: sticky;
+    flex-direction: column;
 }
 #topics {
     width: 100%;
@@ -91,11 +91,57 @@ nav img {
     border-bottom: solid 2px rgba(0, 0, 0, 1.2);
     font-weight: bold;
 }
+.article {
+    margin-block: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 200px;
+    gap: 25px;
+}
+.article p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+.article img {
+    height: 150px;
+    aspect-ratio: 1.5/1;
+}
+.articlebody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.articlebody img {
+    width: 20px;
+    height: 20px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+h1 {
+    margin-block: 15px;
+}
+.articlesartist {
+    display: flex;
+    gap: 20px;
+}
+.articlepar {
+    margin-bottom: 15px;
+}
+.articlepar p {
+    font-weight: 400;
+    color: rgb(99, 93, 93);
+}
+.articlebottom {
+    display: flex;
+    justify-content: space-between;
+}
 #info {
     width: 30%;
     border-left: solid rgba(0, 0, 0, 0.616) 1px;
     padding-left: 5%;
     padding-right: 10%;
+    flex-wrap: wrap;
 }
 .twitter {
     width: 100%;
